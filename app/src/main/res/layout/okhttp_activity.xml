@@ -4,5 +4,5 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-        <!-- fragment replace ->此处一定要自定义id-->
+        android:layout_height="match_parent"
+        tools:context=".OkhttpActivity"/>

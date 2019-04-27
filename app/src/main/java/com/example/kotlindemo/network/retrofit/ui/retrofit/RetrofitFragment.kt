@@ -8,7 +8,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.kotlindemo.R
-import com.example.kotlindemo.network.retrofit.data.retrofit.RetrofitUtil
 import kotlinx.android.synthetic.main.retrofit_fragment.*
 
 class RetrofitFragment : Fragment() {
@@ -21,11 +20,11 @@ class RetrofitFragment : Fragment() {
 
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        return inflater.inflate(R.layout.retrofit_fragment, container, false)
-    }
+    ) = inflater.inflate(R.layout.retrofit_fragment, container, false)
+
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
@@ -38,8 +37,16 @@ class RetrofitFragment : Fragment() {
         })
 
         btn0.setOnClickListener(View.OnClickListener {
-            viewModel.getInternetData("halong")
+            viewModel.getHTMLString("halong")
         })
+
+
+        btn1.setOnClickListener {
+            viewModel.getRepos("halong")
+        }
+
+
+
     }
 
 }

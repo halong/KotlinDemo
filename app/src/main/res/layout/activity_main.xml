@@ -15,7 +15,31 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/btn0"
                 android:textAllCaps="false"
+                android:text="Okhttp"/>
+
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn1"
+                android:textAllCaps="false"
                 android:text="Retrofit"/>
+
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn2"
+                android:textAllCaps="false"
+                android:text="SQLite"/>
+
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn3"
+                android:textAllCaps="false"
+                android:text="Room"/>
+
+        <Button android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn4"
+                android:textAllCaps="false"
+                android:text="NanoHTTPD"/>
 
     </LinearLayout>
 

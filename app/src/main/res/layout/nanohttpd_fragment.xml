@@ -37,14 +37,21 @@
                     android:id="@+id/btn0"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="get方式获取字符串"
+                    android:text="开启服务端口"
                     android:textAllCaps="false"/>
 
             <Button
                     android:id="@+id/btn1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="get方式获取实体对象"
+                    android:text="测试GET方式访问服务端口"
+                    android:textAllCaps="false"/>
+
+            <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="测试POST方式访问服务端口"
                     android:textAllCaps="false"/>
         </LinearLayout>
     </ScrollView>

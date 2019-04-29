@@ -44,7 +44,7 @@
                     android:id="@+id/btn1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="get方式获取实体对象"
+                    android:text="get方式获取文件"
                     android:textAllCaps="false"/>
         </LinearLayout>
     </ScrollView>

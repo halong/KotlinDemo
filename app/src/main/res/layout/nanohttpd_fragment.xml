@@ -21,6 +21,11 @@
                     android:id="@+id/text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
+
+            <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
         </LinearLayout>
     </ScrollView>
 
@@ -44,14 +49,35 @@
                     android:id="@+id/btn1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="测试GET方式访问服务端口"
+                    android:text="测试GET下载字符串"
                     android:textAllCaps="false"/>
 
             <Button
                     android:id="@+id/btn2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="测试POST方式访问服务端口"
+                    android:text="测试GET下载文件"
+                    android:textAllCaps="false"/>
+
+            <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="测试POST上传参数"
+                    android:textAllCaps="false"/>
+
+            <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="测试GET上传表单"
+                    android:textAllCaps="false"/>
+
+            <Button
+                    android:id="@+id/btn5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="关闭服务端口"
                     android:textAllCaps="false"/>
         </LinearLayout>
     </ScrollView>

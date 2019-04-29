@@ -41,6 +41,10 @@ class OkhttpFragment : Fragment() {
             viewModel.getHTMLString()
         }
 
+        btn1.setOnClickListener {
+            viewModel.downloadFile()
+        }
+
     }
 
 }

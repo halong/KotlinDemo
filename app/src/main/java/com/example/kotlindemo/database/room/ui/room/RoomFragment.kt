@@ -35,7 +35,7 @@ class RoomFragment : Fragment() {
         })
 
         btn0.setOnClickListener {
-            viewModel.addUser(User(name="lilei",age=20))
+            viewModel.addUser(User(name="lilei",age=20))  //函数调用时使用默认值的例子
             //实现主键自增的3个条件，entity--autoGenerate = true;data class constructor primary key default;实例化时不指定主键
         }
 

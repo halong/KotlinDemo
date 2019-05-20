@@ -13,9 +13,43 @@
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
             android:roundIcon="@mipmap/ic_launcher_round"
-            android:usesCleartextTraffic="true"
             android:supportsRtl="true"
-            android:theme="@style/AppTheme">
+            android:theme="@style/AppTheme"
+            android:usesCleartextTraffic="true">
+        <activity android:name=".notification.NotificationActivity">
+        </activity>
+        <activity android:name=".ui.bounceview.BounceViewActivity">
+        </activity>
+        <activity android:name=".ui.expandview.ExpandViewActivity">
+        </activity>
+        <activity android:name=".gson.GsonActivity">
+        </activity>
+        <activity android:name=".fastjson.FastJsonActivity">
+        </activity>
+        <activity android:name=".image.picasso.PicassoActivity">
+        </activity>
+        <activity android:name=".image.fresco.FrescoActivity">
+        </activity>
+        <activity android:name=".sharedpreferences.SharedPreferencesActivity">
+        </activity>
+        <activity android:name=".rxjava.RxJavaActivity">
+        </activity>
+        <activity android:name=".network.rxhttp.RxHttpActivity">
+        </activity>
+        <activity android:name=".ui.listview.ListViewActivity">
+        </activity>
+        <activity android:name=".handler.HandlerActivity">
+        </activity>
+        <activity android:name=".ui.recyclerview.RecyclerViewActivity">
+        </activity>
+        <activity android:name=".anko.Anko2Activity">
+        </activity>
+        <activity android:name=".network.okhttputils.OkhttputilsActivity">
+        </activity>
+        <activity android:name=".anko.AnkoActivity">
+        </activity>
+        <activity android:name=".ui.pudding.PuddingActivity">
+        </activity>
         <activity android:name=".network.nanohttpd.NanohttpdActivity">
         </activity>
         <activity android:name=".database.sqlite.SqliteActivity">

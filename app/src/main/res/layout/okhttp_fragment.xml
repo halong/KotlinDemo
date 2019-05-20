@@ -37,14 +37,35 @@
                     android:id="@+id/btn0"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="get方式获取字符串"
+                    android:text="下载"
                     android:textAllCaps="false"/>
 
             <Button
                     android:id="@+id/btn1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="get方式获取文件"
+                    android:text="下载文件"
+                    android:textAllCaps="false"/>
+
+            <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="带进度条下载文件"
+                    android:textAllCaps="false"/>
+
+            <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="断点续传下载文件"
+                    android:textAllCaps="false"/>
+
+            <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
                     android:textAllCaps="false"/>
         </LinearLayout>
     </ScrollView>

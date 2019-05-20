@@ -12,10 +12,9 @@
             android:layout_width="match_parent"
             android:layout_height="200dp">
 
-        <LinearLayout
+        <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="wrap_content">
 
             <TextView
                     android:id="@+id/text"
@@ -25,8 +24,9 @@
             <ImageView
                     android:id="@+id/image"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
-        </LinearLayout>
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+        </FrameLayout>
     </ScrollView>
 
     <ScrollView
@@ -70,15 +70,17 @@
                     android:id="@+id/btn4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="测试GET上传表单"
+                    android:text="测试POST上传表单"
                     android:textAllCaps="false"/>
 
             <Button
                     android:id="@+id/btn5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="关闭服务端口"
+                    android:text="测试上传表单带进度监听"
                     android:textAllCaps="false"/>
+
+
         </LinearLayout>
     </ScrollView>
 

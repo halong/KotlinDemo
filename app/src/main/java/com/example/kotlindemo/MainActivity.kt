@@ -1,42 +1,118 @@
 package com.example.kotlindemo
 
-import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
+import com.example.kotlindemo.anko.AnkoActivity
 import com.example.kotlindemo.database.room.RoomActivity
 import com.example.kotlindemo.database.sqlite.SqliteActivity
+import com.example.kotlindemo.handler.HandlerActivity
 import com.example.kotlindemo.network.nanohttpd.NanohttpdActivity
 import com.example.kotlindemo.network.okhttp.OkhttpActivity
+import com.example.kotlindemo.network.okhttputils.OkhttputilsActivity
 import com.example.kotlindemo.network.retrofit.RetrofitActivity
-import kotlinx.android.synthetic.main.activity_main.*
+import com.example.kotlindemo.network.rxhttp.RxHttpActivity
+import com.example.kotlindemo.sharedpreferences.SharedPreferencesActivity
+import com.example.kotlindemo.ui.listview.ListViewActivity
+import com.example.kotlindemo.ui.recyclerview.RecyclerViewActivity
+import org.jetbrains.anko.*
+import org.jetbrains.anko.sdk19.coroutines.onClick
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
-        btn0.setOnClickListener {
-            startActivity(Intent(this@MainActivity,OkhttpActivity::class.java))
+        //使用了Anko扩展库
+        scrollView {
+            verticalLayout {
+                button("handler") {
+                    allCaps = false
+                    onClick {
+                        startActivity<HandlerActivity>()
+                    }
+                }
+
+                button("nanohttpd") {
+                    allCaps = false
+                    onClick {
+                        startActivity<NanohttpdActivity>()
+                    }
+                }
+
+                button("retrofit") {
+                    allCaps = false
+                    onClick {
+                        startActivity<RetrofitActivity>()
+                    }
+                }
+
+                button("Anko") {
+                    allCaps = false
+                    onClick {
+                        startActivity<AnkoActivity>()
+                    }
+                }
+
+                button("okhttp") {
+                    allCaps = false
+                    onClick {
+                        startActivity<OkhttpActivity>()
+                    }
+                }
+
+
+                button("RecyclerView") {
+                    allCaps = false
+                    onClick {
+                        startActivity<RecyclerViewActivity>()
+                    }
+                }
+
+                button("ListView") {
+                    allCaps = false
+                    onClick {
+                        startActivity<ListViewActivity>()
+                    }
+                }
+
+                button("OkHttpUtils") {
+                    allCaps = false
+                    onClick {
+                        startActivity<OkhttputilsActivity>()
+                    }
+                }
+
+                button("SharedPreferences") {
+                    allCaps = false
+                    onClick {
+                        startActivity<SharedPreferencesActivity>()
+                    }
+                }
+
+                button("Room") {
+                    allCaps = false
+                    onClick {
+                        startActivity<RoomActivity>()
+                    }
+                }
+
+                button("SQLite") {
+                    allCaps = false
+                    onClick {
+                        startActivity<SqliteActivity>()
+                    }
+                }
+
+                button("RxHttp") {
+                    allCaps = false
+                    onClick {
+                        startActivity<RxHttpActivity>()
+                    }
+                }
+
+            }
         }
 
-        btn1.setOnClickListener(View.OnClickListener {
-            startActivity(Intent(this@MainActivity,RetrofitActivity::class.java))
-        })
 
-        btn2.setOnClickListener {
-            startActivity(Intent(this@MainActivity,SqliteActivity::class.java))
-        }
-
-        btn3.setOnClickListener {
-            startActivity(Intent(this@MainActivity,RoomActivity::class.java))
-        }
-
-
-        btn4.setOnClickListener {
-            startActivity(Intent(this@MainActivity,NanohttpdActivity::class.java))
-        }
     }
 }

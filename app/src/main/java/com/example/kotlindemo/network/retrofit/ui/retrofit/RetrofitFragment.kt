@@ -31,20 +31,17 @@ class RetrofitFragment : Fragment() {
         viewModel = ViewModelProviders.of(this).get(RetrofitViewModel::class.java)
 
         viewModel.messageData.observe(this, Observer {
-            if (it != null) {
-                text.text = it
-            }
+            text.text = it
         })
 
-        btn0.setOnClickListener(View.OnClickListener {
+        btn0.setOnClickListener {
             viewModel.getHTMLString("halong")
-        })
+        }
 
 
         btn1.setOnClickListener {
             viewModel.getRepos("halong")
         }
-
 
 
     }

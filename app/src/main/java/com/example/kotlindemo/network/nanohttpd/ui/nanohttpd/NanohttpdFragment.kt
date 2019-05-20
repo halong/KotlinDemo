@@ -33,10 +33,14 @@ class NanohttpdFragment : Fragment() {
         viewModel = ViewModelProviders.of(this).get(NanohttpdViewModel::class.java)
 
         viewModel.getData().observe(this, Observer {
+            image.visibility=View.GONE
+            text.visibility=View.VISIBLE
             text.text=it
         })
 
         viewModel.getImagePath().observe(this, Observer {
+            image.visibility=View.VISIBLE
+            text.visibility=View.GONE
             image.setImageURI(Uri.fromFile(File(it)))
         })
 
@@ -61,8 +65,13 @@ class NanohttpdFragment : Fragment() {
         }
 
         btn5.setOnClickListener {
-            viewModel.stopServe()
+            viewModel.uploadFormWithProgress()
         }
+
     }
 
+    override fun onDestroy() {
+        super.onDestroy()
+        viewModel.stopServe()
+    }
 }

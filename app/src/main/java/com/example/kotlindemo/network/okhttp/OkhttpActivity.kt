@@ -11,11 +11,13 @@ class OkhttpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.okhttp_activity)
 
+
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.container, OkhttpFragment.newInstance())
                 .commitNow()
         }
     }
+
 
 }

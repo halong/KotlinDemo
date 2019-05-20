@@ -1,1 +1,1 @@
-include ':app'
+include ':app', ':pudding', ':rxhttp', ':ExpandLib'

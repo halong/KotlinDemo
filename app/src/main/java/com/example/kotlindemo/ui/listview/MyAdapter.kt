@@ -1,13 +1,11 @@
 package com.example.kotlindemo.ui.listview
 
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
-import org.jetbrains.anko.find
-import org.jetbrains.anko.linearLayout
-import org.jetbrains.anko.textView
-import org.jetbrains.anko.verticalLayout
+import com.example.kotlindemo.R
 
 /**
  *Created by halong on 2019/5/16
@@ -15,12 +13,24 @@ import org.jetbrains.anko.verticalLayout
  */
 class MyAdapter(private val list: List<String>) : BaseAdapter() {
     override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View {
-        val view = parent?.context?.linearLayout {
-            textView(list[position]) {
-                textSize = 20f
-            }
+        val view: View
+        val viewHolder: ViewHolder
+        if (convertView == null) {
+            view = LayoutInflater.from(parent!!.context).inflate(R.layout.item_list_view, parent, false)
+            viewHolder = ViewHolder(view)
+            view.tag = viewHolder   //view返回后就成了convertView
+        } else {
+            view = convertView
+            viewHolder = convertView.tag as ViewHolder
         }
-        return view as View
+
+        viewHolder.textView.text = list[position]
+
+        return view
+    }
+
+    inner class ViewHolder(itemView: View) {
+        val textView: TextView = itemView.findViewById(R.id.tv)
     }
 
     override fun getItem(position: Int): Any {

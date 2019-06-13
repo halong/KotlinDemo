@@ -25,7 +25,6 @@ class Anko2UI : AnkoComponent<Anko2Activity> {
             button("Change the words.") {
                 onClick {
                     anko2Activity.onClick()
-
                 }
             }
         }

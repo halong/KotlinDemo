@@ -10,7 +10,10 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/ExpandLib" />
+            <option value="$PROJECT_DIR$/anotherapplication" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/mymoduleapplication" />
+            <option value="$PROJECT_DIR$/mymodulelibrary" />
             <option value="$PROJECT_DIR$/pudding" />
             <option value="$PROJECT_DIR$/rxhttp" />
           </set>

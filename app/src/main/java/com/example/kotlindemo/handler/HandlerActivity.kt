@@ -20,9 +20,7 @@ class HandlerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         verticalLayout {
-            textView = textView {
-                text = "Hello"
-            }
+            textView = textView ("Hello,Handler.")
 
             button("开启子线程") {
                 onClick {

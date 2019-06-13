@@ -5,14 +5,17 @@ import android.os.Bundle
 import com.example.kotlindemo.anko.AnkoActivity
 import com.example.kotlindemo.database.room.RoomActivity
 import com.example.kotlindemo.database.sqlite.SqliteActivity
+import com.example.kotlindemo.eventbus.EventBusActivity
 import com.example.kotlindemo.handler.HandlerActivity
 import com.example.kotlindemo.network.nanohttpd.NanohttpdActivity
 import com.example.kotlindemo.network.okhttp.OkhttpActivity
 import com.example.kotlindemo.network.okhttputils.OkhttputilsActivity
 import com.example.kotlindemo.network.retrofit.RetrofitActivity
 import com.example.kotlindemo.network.rxhttp.RxHttpActivity
-import com.example.kotlindemo.sharedpreferences.SharedPreferencesActivity
+import com.example.kotlindemo.database.sharedpreferences.SharedPreferencesActivity
+import com.example.kotlindemo.image.glide.GlideActivity
 import com.example.kotlindemo.ui.listview.ListViewActivity
+import com.example.kotlindemo.ui.bounceview.BounceViewActivity
 import com.example.kotlindemo.ui.recyclerview.RecyclerViewActivity
 import org.jetbrains.anko.*
 import org.jetbrains.anko.sdk19.coroutines.onClick
@@ -109,6 +112,28 @@ class MainActivity : AppCompatActivity() {
                         startActivity<RxHttpActivity>()
                     }
                 }
+
+                button("EventBus") {
+                    allCaps = false
+                    onClick {
+                        startActivity<EventBusActivity>()
+                    }
+                }
+
+                button("Glide") {
+                    allCaps = false
+                    onClick {
+                        startActivity<GlideActivity>()
+                    }
+                }
+
+                button("BounceView") {
+                    allCaps = false
+                    onClick {
+                        startActivity<BounceViewActivity>()
+                    }
+                }
+
 
             }
         }

@@ -16,21 +16,27 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
-        <activity android:name=".notification.NotificationActivity">
+        <activity android:name=".anko.AnkoSQLiteActivity">
+        </activity>
+        <activity android:name=".image.glide.GlideActivity">
+        </activity>
+        <activity android:name=".ui.dialog.DialogActivity">
+        </activity>
+        <activity android:name=".eventbus.EventBusActivity">
+        </activity>
+        <activity android:name=".ui.notification.NotificationActivity">
         </activity>
         <activity android:name=".ui.bounceview.BounceViewActivity">
         </activity>
-        <activity android:name=".ui.expandview.ExpandViewActivity">
+        <activity android:name=".json.gson.GsonActivity">
         </activity>
-        <activity android:name=".gson.GsonActivity">
-        </activity>
-        <activity android:name=".fastjson.FastJsonActivity">
+        <activity android:name=".json.fastjson.FastJsonActivity">
         </activity>
         <activity android:name=".image.picasso.PicassoActivity">
         </activity>
         <activity android:name=".image.fresco.FrescoActivity">
         </activity>
-        <activity android:name=".sharedpreferences.SharedPreferencesActivity">
+        <activity android:name=".database.sharedpreferences.SharedPreferencesActivity">
         </activity>
         <activity android:name=".rxjava.RxJavaActivity">
         </activity>

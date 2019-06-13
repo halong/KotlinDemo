@@ -9,12 +9,10 @@ import org.jetbrains.anko.sdk19.coroutines.onClick
  * Anko地址：https://github.com/Kotlin/anko
  * Anko:kotlin对Andoid的简化扩展库
  * Anko简化扩展的地方：
- *      Commoms--Intents,Dialog,Toast,Logging,Resource,dimension
+ *      Commoms --Intents,Dialog,Toast,Logging,Resource,dimension
  *      Layouts
  *      SQLite
  *      Coroutines
- *
- *
  *
  */
 
@@ -36,6 +34,13 @@ class AnkoActivity : AppCompatActivity(),AnkoLogger {
                 allCaps = false
                 onClick {
                     startActivity<Anko2Activity>()
+                }
+            }
+
+            button("SQLite") {
+                allCaps = false
+                onClick {
+                    startActivity<AnkoSQLiteActivity>()
                 }
             }
 

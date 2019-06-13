@@ -5,7 +5,6 @@ import android.content.Context
 import com.example.kotlindemo.network.rxhttp.RxHttpRequestSetting
 import com.orhanobut.logger.AndroidLogAdapter
 import com.orhanobut.logger.Logger
-import com.zhy.http.okhttp.OkHttpUtils
 import per.goweii.rxhttp.core.RxHttp
 
 /**

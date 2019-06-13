@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import org.jetbrains.anko.matchParent
 import org.jetbrains.anko.recyclerview.v7.recyclerView
-import org.jetbrains.anko.textView
 import org.jetbrains.anko.verticalLayout
 
 class RecyclerViewActivity : AppCompatActivity() {
@@ -31,7 +30,6 @@ class RecyclerViewActivity : AppCompatActivity() {
 
             recyclerView {
                 layoutManager=LinearLayoutManager(this@RecyclerViewActivity)
-
                 adapter = MyAdapter(list)
             }.lparams(width = matchParent, height = matchParent)
         }

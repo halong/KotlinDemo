@@ -1,0 +1,2 @@
+1,下载jdk：https://download.oracle.com/otn/java/jdk/8u271-b09/61ae65e088624f5aaa0b1d2d801acb16/jdk-8u271-macosx-x64.dmg?AuthParam=1606817222_bcca3644eac2e49b765231577847d6b1
+2,下载flutter sdk:https://storage.googleapis.com/flutter_infra/releases/stable/macos/flutter_macos_1.22.4-stable.zip

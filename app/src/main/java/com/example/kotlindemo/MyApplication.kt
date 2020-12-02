@@ -24,7 +24,7 @@ class MyApplication :Application() {
         //初始化Logger
         Logger.addLogAdapter(AndroidLogAdapter())
 		
-		//halong
+		//jfgjfjvj
 
         //初始化RxHttp
         RxHttp.init(this)
